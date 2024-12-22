@@ -1,0 +1,42 @@
+CÓDIGOS DE STATUS:
+    FAMILIAS:
+        - 1** (informativo) => Respostas sem conteúdo, contendo apenas informações sobre a comunicação
+        - 2** (sucesso) => A mensagem chegou ao servidor e é válida
+        - 3** (redirecionamento) => O recurso buscado está em outro servidor
+        - 4** (erro do cliente) => A requisição possui algum erro
+        - 5** (erro servidor) => O servidor não pode atender a requisição
+
+* No total temos 63 códigos de status oficiais, sendo:
+    - 4 da familia 1**
+    - 10 da familia 2**
+    - 9 da familia 3**
+    - 29 da familia 4**
+    - 11 da familia 5**
+
+
+MAIS COMUNS:
+    1**:
+        - 100 (continue) => Indica que o cliente pode continuar com a solicitação. Comum em grandes uploads para verificar se o servidor está pronto.
+    
+    2**:
+        - 200 (Sucesso) => Solicitação bem-sucedida. É o código padrão para respostas HTTP bem-sucedidas.
+        - 201 (Created) => Indica que um recurso foi criado (usado frequentemente em APIs REST com requisições POST).
+        - 204 (No Content) => Sucesso sem retorno de corpo. Comum para operações como DELETE ou atualizações sem resposta.
+    
+    3**:
+        - 301 (Moved Permanently) => O recurso foi movido permanentemente para outra URL (comum em SEO e mudanças de sites).
+        - 302 (Found) => Indica redirecionamento temporário, usado para mover usuários sem alterar permanentemente o endereço.
+        - 304 (Not Modified) => Indica que o recurso não foi modificado desde a última solicitação, permitindo ao cliente usar a versão em cache.
+    
+    4**:
+        - 400 (Bad Request) => A solicitação foi malformada ou inválida.
+        - 401 (Unauthorized) => Requer autenticação.
+        - 403 (Forbidden) => O cliente não tem permissão para acessar o recurso.
+        - 404 (Not Found) => O recurso solicitado não foi encontrado (o mais conhecido!).
+        - 429 (Too Many Requests) => Comum em sistemas com rate-limiting, quando um cliente faz muitas requisições em curto tempo.
+    
+    5**:
+        - 500 (Internal Server Error) => Erro genérico para condições inesperadas no servidor.
+        - 502 (Bad Gateway) => Indica que o servidor recebeu uma resposta inválida ao atuar como gateway ou proxy.
+        - 503 (Service Unavailable) => O servidor está sobrecarregado ou em manutenção.
+        - 504 (Gateway Timeout) => O servidor, ao atuar como proxy, não recebeu resposta a tempo de outro servidor.

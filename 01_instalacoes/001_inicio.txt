@@ -1,0 +1,11 @@
+O QUE É FRONT END?
+    - Corresponde a parte visual da aplicação, aquela a qual o usuário interage
+    - Um desenvolvedor Front-End é o profissional rersponsável por desenvolver os códigos que vão garantir uma página web consistente, responsiva e com boa experiência de usuário (UX)
+
+TERMINOLOGIAS (alto nível para baixo nível):
+    - FRAMEWORK => Conjunto de Bibliotecas
+    - BIBLIOTECAS => Conjunto de Pacotes
+    - PACOTES => Coleção de funções (funcionalidades prontas para uso)
+    - LINGUAGEM DE PROGRAMAÇÃO => Conjunto de de regras que pemitem criar um código fonte que informará instruções de processamentos ao computador
+    - LINGUAGEM MÁQUINA => Linguagem entendida pelo computador e de dificil entendimento ao ser humano (linguagem binária)
+    - HARDWARE => Dispositivos físicos construídos por circiotos elétricos

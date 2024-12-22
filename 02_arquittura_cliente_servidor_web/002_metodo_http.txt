@@ -1,0 +1,25 @@
+METODOS HTTP:
+    - Especifica a ação na qual o cliente deseja execultar
+    - Normalmente um cliente deseja obter (GET) ou enviar dados a um servidor
+    - Porém existem outras ações que o cliente pode realizar
+
+GET
+    - Ultilizado quando se deseja obter um recurso do servidor
+
+POST
+    - Ultilizado para enviar dados (arquivos, formulários) a um servidor
+
+PUT
+    - Ultilizado quando se deseja modificar um dado do servidor
+
+DELETE
+    - Ultilizado quando se deseja deletar um dado do servidor
+
+PATCH
+    - Ultilizado quando se deseja realizar uma alteração parcial a um dado do servidor
+
+OUTROS MÉTODOS POUCO USUÁIS:
+    - HEAD
+    - CONNECT
+    - OPTIONS
+    - TRACE

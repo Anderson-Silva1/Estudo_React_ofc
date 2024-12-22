@@ -1,0 +1,3 @@
+O QUE É TYPESCRIPT?
+    - É um JavaScript melhorado
+    - Um super-seet do JavaScript

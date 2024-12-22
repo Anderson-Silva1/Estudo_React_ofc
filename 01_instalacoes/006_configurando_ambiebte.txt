@@ -1,0 +1,9 @@
+CONFIGURANDO AMBIENTE:
+    - Precisamos ter um browser (navegador), de preferência o chrome
+    - Precisamos de um editor de código, usaremos o VSCode
+        * Usaremos o tema "DRACULA" no VSCode
+        * Usaremos o "Material Icons Themes"
+        * Usaremos o "Auto Close Tag" e o "Auto Rename Tag"
+        * Usaremos o "Better Comment" para termos comentários mais dinâmicos
+        * Usaremos o "JavaScript (ES6) code snippets" pára melhorar na hora de escrever nossos códigos
+    - Precisamos instalar o NODE JS para rodar nossos projetos de forma internas a nossa máquina

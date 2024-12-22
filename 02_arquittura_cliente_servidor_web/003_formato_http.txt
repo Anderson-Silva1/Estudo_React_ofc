@@ -1,0 +1,4 @@
+FORMATO DE MENSAGEMN DO HTTP
+    - As mensagens de requisição e resposta podem ser divididas em duas partes:
+        * HEADER => Cabeçalho (esse é obrigatório conter em uma requisição HTTP)
+        * PAYLOAD => Corpo (esse não é obrigatório conter em uma requisição HTTP)

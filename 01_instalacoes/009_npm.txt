@@ -1,0 +1,5 @@
+O QUE É NPM?
+    - É um gerênciador de pacotes do node js
+    - É instalado junto com o node js
+    - Significa "Node Packege Modules"
+    - Usamos o NPM com o comando: npm i ou npm install + o nome do pacote a ser instalado

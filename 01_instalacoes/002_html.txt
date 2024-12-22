@@ -1,0 +1,28 @@
+O QUE É HTML?
+    - HTML ou Hypertext Marckup Language significa linguagem de marcação de Hypertexto
+        * O QUE É HYPERTEXTO?
+            - Hypertexto é um termo que significa que, diferente de um texto comun, ele pode contér referências navegáveis para outros textos
+        - Essas referências são chamadas de links
+    - É possível considerar a web inteira como um único Hypertext
+        * O QUE É MARCKUP?
+            - Uma linguagem de marcação é uma linguagem que possuem símbolos especiais que indicam metainformações
+            - Elas referen-se a forma, hierarquia, ordem e/ou semântica dos elementos da página
+        * O QUE SIGNIFICA LANGUAGE?
+            - Logo de início quero dizer que HTML não é uma lingagem de programação... Mas de marcação
+     - HTML teve seu início em 1991, e atualmete está na versão 5, lançada em 2014
+
+    - Marcação em HTML chamamos de TAGS
+    - Tags HTML são elementos das nossas páginas
+    - A estrutura de uma tag geralmente funciona assim:
+        * Usamos o "<tag>" para abrir e o "</tag>" para fechar uma tag
+        * Ficando assim: 
+            <p>Este é um parágrafo</p>
+            <button>Este é um botão</button>
+    - Podem existir as tags que não precisam serem fechadas como a tag "img": <img>
+    - Mas para padronizar nosso código, gosto de fazer um auto-close na tag: <img />
+    - Dentro da nossa tag podem existir atributo para especificação de uma tag:
+        * <p atributo1="teste" >Este é um parágrafo</p>
+        * Temos aqui um atributo chamado "atributo1" que recebe o valor "teste"
+    
+
+    Um grande aliado aos programadores web é o DevTools dos navegadores, neles podemos ver informações que nosso código não revela

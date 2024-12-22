@@ -1,0 +1,30 @@
+CSS
+    - Sintaxe CSS:
+        * Seletor {
+            propriedades: valor
+        }
+
+    - ADICIONANDO CSS NO HTML
+        * inline => Dentro da propria tag pelo atributo "style"
+        * Interno => Dentro do head do HTML pela tag "style"
+        * Externo => Usamos a tag "link" dentro do head do HTML para direcionar a um arquivo ".css"
+    
+    - SELEÇÃO
+        * Seleção Geral => Para selecionar todos os elementos do nosso HTML no CSS usamos o seletor universal: *
+            * {}
+        * Seleção por TAG => Podemos selecionar todas as Tags de uma só vêz...
+            p {}, h1 {}, div {}
+        * Seleção por classe => Podemos selecionar elementos por suas classes, para isso, acrescentamos o "."
+            .classe1 {}, .titulo {}
+        * Seleção por ID => Podemos selecionar um elemento por seu ID, para isso, acrescentamos o "#"
+            #classe1 {}, #titulo {}
+        * Seleção específica => Podemos Selecionar um elemento e a sua classe ou ID junto, para isso usamos a tag + "."/"#"
+            header#cabecalho {}, div.titulo {}
+        * Selecão dos filhos => Podemos selecionar também de forma específica do pai até o filho
+            header div h1 {}, main section {}
+        * Temos outros seletores, porém não são tão usuáis...
+
+    - ESPECIFICIDADE
+        * CSS é um estido em cascata, o que significa que as últimas propriedades serão aplicadas...
+        * Porém existe a especificidade, o que significa que haverá uma forma de especificar uma propriedade por seu seletor
+        * ID é mais específico que Class

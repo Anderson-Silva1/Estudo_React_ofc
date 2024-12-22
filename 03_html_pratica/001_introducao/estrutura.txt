@@ -1,0 +1,27 @@
+ESTRUTURA HTML
+    - Antes de maisn nada, é necesário entender uma concordância mundial, os arquivos html devem conter o nome de "index", ficando "index.html"
+
+    - O HTML é composto por Tags como estudado, então criamos a tag HTML para haver a abertura do documento HTML:
+        
+        <html>aqui dentro ficará nosso arquivo HTML</html>
+
+    - Dentro do HTML temos outras duas Tags: "head" e "body"
+
+        <html>
+            <head>Aqui ficará nosso cabeçalho, informações da página e pré definições</head>
+            <body>Aqui será o conteúdo da página</body>
+        </html>
+
+
+HEAD
+    - Dentro do HEAD podemos ter algumas "meta" tags, que servem como predefinições do nosso HTML
+    - Por padrão temos 3:
+        * <meta charset="UTF-8" /> => Essa meta tag que vai definir a codificação de caracteres do nosso HTML
+        * <meta name="description" content="Minha página HTML"> => Essa meta vai criar para o SEO (buscados do navegador) uma escrição do nosso HTML
+        * <meta name="viewport" content="width=device-width, initial-scale=1.0" /> => Essa meta tag vai tornar nosso HTML responsivo
+    - Dentro do HEAD também temos a tag "title", e ela será o nome que aparecerá na aba do navegador
+        * <title>Esse é o títilo do meu HTML</title>
+
+COMETÁRIOS HTML
+    - São trexos de códigos que não serão relevantes para nosso HTML a nível de renderização
+    - No HTML usamos os sinais: <!---->

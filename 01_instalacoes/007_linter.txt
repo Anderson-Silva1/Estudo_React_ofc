@@ -1,0 +1,22 @@
+O QUE É LINTER?
+    - Uma ferramenta que serve para melhorar o seu código
+    - Ele analíza seu código a fim de encontrar possíveis erros
+    - O Linter é especialmente útil/valioso para linguagens interpretadas, uma vêz que elas não tem um interpretador paradetectar problemas em tempo de desenvolvimento
+
+
+LINGUAGENS COMPILADAS:
+    - São linguagens que precisam ser traduzudas para a linguagem da máquina (binária) criando, geralmente um arquivo execultável
+    - Se existir algum erro, esse arquivo execultável não será gerado...
+
+LINGUAGENS INTERPRETADAS:
+    - São linguagens que será execultadas linha a linha
+    - O que significa que se existir algum erro, em alguma determinada parte do código, o navegador irá intepretaro que é para fazer até determinado momento, porém quando ele achar um erro, esse erro vai quebrar o código
+    - Para solucionar isso usamos o LINTER
+
+VANTAGENS DO LINTER:
+    1 > Minimíza o número de erros em produção
+    2 > Código mais legível, manutenível a mais consistente
+    3 > Menos discuções sobre estilos de códigos em "code rewiews"
+        * code rewiews => É quando outra pessoa vai ver o seu código e vai opinar sobre ele
+    4 > Código mais performático e mais seguro
+    5 > Educa mais desenvolvedores sobre a qualidade dos códigos

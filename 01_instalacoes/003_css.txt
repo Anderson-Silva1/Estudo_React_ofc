@@ -1,0 +1,13 @@
+O QUE É CSS?
+    - Trata-se de uma linguagem de estilização (assim como o HTML, o CSS não é uma linguagem de programação)
+    - É usado para trazer uma melhor aparência ao nosso HTML (corpo da página web)
+    - Nele podemos estilizar o HTML atravéz de uma tag chamada "link":
+        * <link rel="stylesheet" href="./style.css" />
+    - Podemos usar o CSS de maneira interna ao HTML, dentro do "head" com a tag: <style>ESTILIZAÇÃO</style>
+    - Podemos usar o CSS de maneira interna a tag HTML, atravéz do atributo "style":
+        * <p style="color: red;">Este é meu parágrafo</p>
+    - Podemos usar seletores em CSS para especificar nossa estilização HTML, para isso usamos as tags, classes e os id's
+        * Tag => Usa-se para selecionar todas as tags:
+            > p {} >> Dessa forma estilizaremnos todos os nossos parágrafos
+        * Classes => Dessa forma podemos criar uma classe de elementos no HTML atravéz do atribito "classe" e selecioná-los no CSS usando o "." >> .minha_classe
+        * Id's => Dessa forma podemos criar um elementos ID no HTML atravéz do atribito "id" e selecioná-los no CSS usando o "." >> #minha_classe

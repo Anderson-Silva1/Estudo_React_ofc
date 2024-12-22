@@ -1,0 +1,9 @@
+O QUE É ESLINT?
+    - É o Linter mais popular do JavaScript
+    - Para usar ele no VSCode, instalamos a extenção "ESLint"
+    - Agora é só configurar para usár-mos ele para verificar possíveis erros em meu código, ou possíveis desvios de padões da empresa
+
+PRETTIER
+    - Usamos ele em conjunto ao ESLINT
+    - O ESLint verifica possíveis erros e o Prettier corrige pára nós
+    - Mas para habilitar o PRETTIER no VSCode precisamos usá-lo como formatado altomático do VSCode 

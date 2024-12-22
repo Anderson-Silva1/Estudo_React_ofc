@@ -1,0 +1,5 @@
+O QUE É JAVASCRIPT?
+    - É a linguagem de programação mais ultilizada entre os desenvolvedores
+    - Linguagem usada no Front-end, Back-end e no Mobile
+    - Os browsers (navegadores) execultam JavaScript
+    - Existem inúmeros FrameWorks que se baseiam em JavaScript

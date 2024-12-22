@@ -1,0 +1,42 @@
+O QUE É PROTOCOLO HTTP?
+    - HyperText Transfer Protocol (Protocolo de Transferência de Hypertexto)
+    - Ou seja, ele é responsável pela comunicação (do que será entregue ao usuário final/cliente e do servidor) 
+    - Está presente sempre quando vamos fazer uma requisição na web, ou uma pesquisa simples no Google (que também é uma requisição na web)
+        * https://google.com => Esse é o endereço do Google na web
+        * https://youtube.com => Esse é o endereço do YouTube na web
+    - Afunilando mais ainda no raciocínio, o HTTP é responsável por mandar toda a estrutura HTML juntamente com todas as suas importações para um usuário final...
+    - Quando acessamos o endereço: https://google.com, estamos solicitando ao servidor da Google atravéz do protocolo HTTP, toda a página do Google, desde textos, imagens, cores, estilizações, interações... Tudo o que contém no site de pesquisas do Google
+
+PRA QUE SERVE O HTTP?
+    - Trata-se de um protocolo que define como as mensagens devem ser enviadas ao clientee pelo servidor em uma rede IP
+    - É sobre tudo ultilizada para solicitação/recebimento de uam página web pela internet
+
+MAIS SOBRE HTTP:
+    - O HTTP define a estrutura de como as mensagens deve ser enviadas do cliente ao servidor e vice-versa
+    - Para fazer isso, ele usa o protocolo TCP/IP para o transporte das informações cliente/servidor
+
+O QUE É IP?
+    - Significa Internet Protocol (Protocolo de internet) e serve como um CPF de uma máquina na rede web
+
+EXEMPLO DE IP:
+    - 192.168.1.102 -> IPV4
+    - 3002:0bd4:0000:0000:0000:ee00:0033:6778 -> IPV6
+
+SERVIDOR DNS
+    - O servidor DNS ou Domain Name System é um servidor mundial, espalhado no mundo, onde tem a função de traduzir endereços IP para o nosso idioma
+    - Sem ele, para acessarmos o site do google.com, precisaríamos escrever esse endereço IP: http://172.217.169.14
+    - Com o DNS, basta escrever: google.com, que ele já tradúz parao IP do Google
+    - E isso chamamos de domínio... https://google.com é o domínio do IP http://172.217.169.14
+    - Existem pelo menos 13 servidores DNS no mundo
+
+O QUE É TCP?
+    - Com o endereço IP do servidor, é possível estabelecer uma comunicação entre ele e o cliente. Esse link será feito por meio do protocolo TCP
+    - TCP (Transmission Control Protocol) estabelece a comunicação do cliente com o servidor, e organiza os dados a serem transmitidos
+    - A comunicação permanece ativa até que todos os dados sejam transmitidos
+
+
+ARQUITETURA CLIENTE SERVIDOR
+    * Vamos supor que quero acessar o site do https://google.com atravéz do navgador chrome
+        - Primeiro, essa requisção vai para um servidor DNS, onde será traduzido para o endereço IP do servidor do Google e mandado de volta para o Cliente
+        - Uma vêz que tenho o IP do servidor do qual eu quero alguma coisa, no caso o servidor do Google, o TCP irá estabelecer a comunicação usando o endereço IP da minha máquina e o endereço IP do servidor Google
+        - Uma vêz que temos o meio de comunicação criado, o HTTP entra em ação e define o que será pedido e entregue a ambas as partes

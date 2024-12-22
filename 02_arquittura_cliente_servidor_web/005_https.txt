@@ -1,0 +1,7 @@
+O QUE É HTTPS?
+    - Entendemos o que é HTTP, mas o que é HTTPS?
+    - É basicamente um HTTP mais seguro!
+    - Do inglês Hipertext Transfer Protocol Secure, significa Protocolo de Transferência de Hypertexto Seguro
+    - É usado para criptografia e autenticação de comunicação entre o servidor web e o navegador
+    - Sem criptografia, os dados da web seriam lidos como textos simples por qualquer pessoa com acesso a rede relevante
+    - Ás páginas da internet ultilizam este protocolo para evitar que 3° manipulem as informações trocadas entre servidor e usuário 
