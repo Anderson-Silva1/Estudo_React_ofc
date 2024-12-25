@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formatação de Texto no CSS</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+      }
+
+      h1 {
+        text-align: center;
+        color: #3498db;
+        font-size: 36px;
+        font-weight: bold;
+      }
+
+      p {
+        font-size: 18px;
+        line-height: 1.6;
+        text-align: justify;
+        color: #2c3e50;
+      }
+
+      .destaque {
+        font-size: 20px;
+        font-style: italic;
+        color: #e74c3c;
+      }
+
+      .negrito {
+        font-weight: bold;
+        color: #16a085;
+      }
+
+      .sublinhado {
+        text-decoration: underline;
+        color: #9b59b6;
+      }
+
+      .tachado {
+        text-decoration: line-through;
+        color: #f39c12;
+      }
+
+      .sombra {
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        font-size: 24px;
+      }
+
+      .espacos {
+        line-height: 2;
+        letter-spacing: 2px;
+        font-size: 20px;
+        color: #34495e;
+      }
+
+      .uppercase {
+        text-transform: uppercase;
+        color: #1abc9c;
+      }
+
+      .lowercase {
+        text-transform: lowercase;
+        color: #8e44ad;
+      }
+
+      .capitalize {
+        text-transform: capitalize;
+        color: #f1c40f;
+      }
+
+      .shadow-text {
+        font-size: 32px;
+        color: #ecf0f1;
+        font-weight: bold;
+        text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.7);
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Exemplos de Formatação de Texto no CSS</h1>
+
+    <div>
+      <p class="destaque">
+        Este é um texto em <span class="negrito">negrito</span> e
+        <span class="sublinhado">sublinhado</span>. Ele também pode ser
+        <span class="tachado">tachado</span> para efeitos especiais.
+      </p>
+      <p class="sombra">
+        Este parágrafo tem uma <strong>sombra de texto</strong>.
+      </p>
+      <p class="espacos">
+        Este parágrafo tem espaçamento entre as linhas e entre as letras.
+      </p>
+      <p class="uppercase">Texto em caixa alta.</p>
+      <p class="lowercase">Texto em caixa baixa.</p>
+      <p class="capitalize">
+        Texto com a primeira letra de cada palavra em maiúscula.
+      </p>
+      <p class="shadow-text">Texto com sombra mais intensa.</p>
+    </div>
+
+    <section>
+      <h2>Propriedades CSS de Formatação de Texto</h2>
+
+      <h3>1. Propriedades Básicas de Texto</h3>
+      <ul>
+        <li><strong>color</strong>: Define a cor do texto.</li>
+        <li>
+          <strong>font-family</strong>: Define a família de fontes do texto.
+        </li>
+        <li><strong>font-size</strong>: Define o tamanho da fonte.</li>
+        <li>
+          <strong>font-weight</strong>: Define o peso da fonte (normal, bold,
+          etc.).
+        </li>
+        <li>
+          <strong>font-style</strong>: Define o estilo da fonte (normal, italic,
+          oblique).
+        </li>
+      </ul>
+
+      <h3>2. Propriedades de Alinhamento</h3>
+      <ul>
+        <li>
+          <strong>text-align</strong>: Alinha o texto (left, right, center,
+          justify).
+        </li>
+        <li>
+          <strong>text-indent</strong>: Define o recuo da primeira linha de um
+          parágrafo.
+        </li>
+      </ul>
+
+      <h3>3. Propriedades de Decoração de Texto</h3>
+      <ul>
+        <li>
+          <strong>text-decoration</strong>: Adiciona decorações ao texto, como
+          underline (sublinhado), line-through (tachado) ou overline
+          (sobrelinha).
+        </li>
+        <li>
+          <strong>text-transform</strong>: Controla a capitalização do texto,
+          com valores como uppercase, lowercase e capitalize.
+        </li>
+      </ul>
+
+      <h3>4. Propriedades Avançadas de Formatação de Texto</h3>
+      <ul>
+        <li>
+          <strong>letter-spacing</strong>: Ajusta o espaçamento entre as letras.
+        </li>
+        <li>
+          <strong>line-height</strong>: Define o espaçamento entre as linhas de
+          texto.
+        </li>
+        <li>
+          <strong>word-spacing</strong>: Ajusta o espaçamento entre as palavras.
+        </li>
+        <li>
+          <strong>text-shadow</strong>: Aplica uma sombra ao texto, útil para
+          efeitos visuais.
+        </li>
+      </ul>
+
+      <h3>Exemplo Prático</h3>
+      <p>
+        <strong
+          >O código abaixo aplica as principais propriedades de formatação de
+          texto:</strong
+        >
+      </p>
+      <pre>
+            <code>
+p {
+    font-size: 18px;
+    line-height: 1.6;
+    text-align: justify;
+    color: #2c3e50;
+}
+            </code>
+        </pre>
+    </section>
+  </body>
+</html>

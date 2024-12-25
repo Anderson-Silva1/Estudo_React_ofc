@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Design Responsivo no CSS</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+      }
+      h1 {
+        text-align: center;
+        color: #2c3e50;
+      }
+      .container {
+        width: 100%;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 20px;
+        box-sizing: border-box;
+      }
+      .grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+      }
+      .item {
+        background-color: #3498db;
+        color: white;
+        padding: 20px;
+        text-align: center;
+        border-radius: 5px;
+      }
+      /* Responsividade */
+      @media (max-width: 1024px) {
+        .grid {
+          grid-template-columns: repeat(2, 1fr);
+        }
+      }
+
+      @media (max-width: 768px) {
+        .grid {
+          grid-template-columns: 1fr;
+        }
+      }
+
+      @media (max-width: 480px) {
+        body {
+          font-size: 14px;
+        }
+        .container {
+          padding: 10px;
+        }
+        .item {
+          padding: 15px;
+          font-size: 14px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Design Responsivo com CSS</h1>
+    <div class="container">
+      <div class="grid">
+        <div class="item">Item 1</div>
+        <div class="item">Item 2</div>
+        <div class="item">Item 3</div>
+      </div>
+    </div>
+
+    <section>
+      <h2>O que é Responsividade?</h2>
+      <p>
+        Responsividade no design web significa criar layouts que se adaptam ao
+        tamanho da tela ou à resolução do dispositivo do usuário, garantindo uma
+        boa experiência de navegação em dispositivos variados, como desktops,
+        tablets e smartphones.
+      </p>
+
+      <h3>Por que a Responsividade é Importante?</h3>
+      <p>
+        Com a crescente diversidade de dispositivos de acesso à web (celulares,
+        tablets, desktops, etc.), é essencial garantir que as páginas da web se
+        ajustem adequadamente a diferentes tamanhos de tela, evitando que os
+        usuários precisem rolar horizontalmente ou fazer zoom para visualizar o
+        conteúdo corretamente.
+      </p>
+
+      <h3>Como Tornar um Layout Responsivo?</h3>
+      <p>
+        A melhor maneira de criar um design responsivo é usar
+        <strong>media queries</strong> no CSS. Media queries permitem que você
+        altere o estilo de elementos com base em características específicas do
+        dispositivo, como a largura da tela.
+      </p>
+
+      <p>
+        Aqui estão algumas das propriedades mais comuns para tornar um layout
+        responsivo:
+      </p>
+      <ul>
+        <li>
+          <strong>width: 100%;</strong>: Isso permite que os elementos ocupem a
+          largura total do contêiner, adaptando-se ao espaço disponível.
+        </li>
+        <li>
+          <strong>max-width</strong>: Define o limite máximo para o tamanho de
+          um elemento, evitando que ele ultrapasse um determinado limite.
+        </li>
+        <li>
+          <strong>flexbox</strong> e <strong>grid</strong>: Usados para criar
+          layouts dinâmicos que se ajustam automaticamente ao espaço disponível.
+        </li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Exemplo de Responsividade com Media Queries</h2>
+      <p>
+        O código abaixo utiliza media queries para ajustar a quantidade de
+        colunas em um layout de grid:
+      </p>
+      <pre>
+            <code>
+@media (max-width: 1024px) {
+    .grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .grid {
+        grid-template-columns: 1fr;
+    }
+}
+            </code>
+        </pre>
+      <p>No exemplo acima:</p>
+      <ul>
+        <li>
+          Para telas com largura máxima de 1024px (como tablets), o layout de
+          grid terá 2 colunas.
+        </li>
+        <li>
+          Para telas com largura máxima de 768px (como celulares), o layout de
+          grid terá apenas 1 coluna.
+        </li>
+      </ul>
+    </section>
+  </body>
+</html>

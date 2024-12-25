@@ -1,0 +1,28 @@
+div#conteiner {
+  width: 400px;
+  height: 400px;
+  background-color: blue;
+}
+
+p#exemplo {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 600;
+  color: #fff;
+  padding: 100px;
+  text-shadow: 10px 5px 5px rgba(0, 0, 0, 0.6);
+}
+
+/* * Podemos usar a pedding de forma específica */
+
+.teste {
+  padding: 100px; /* ? Geral, todos os lados recebem a padding de 100px*/
+
+  padding-top: 100px; /* ? Específico, apenas o lado de cima recebe a padding de 100px*/
+  padding-bottom: 100px; /* ? Específico, apenas o lado de baixo recebe a padding de 100px*/
+  padding-left: 100px; /* ? Específico, apenas o lado de esquerda recebe a padding de 100px*/
+  padding-right: 100px; /* ? Específico, apenas o lado de direita recebe a padding de 100px*/
+
+  padding: 100px 50px; /* ? Específico, dessa forma o lado superior e inferior recebem 100px, e o esquerdo e direito recebe 50px*/
+
+  padding: 100px 50px 80px 20px; /* ? Específico, dessa forma o lado superior recebe 100px, o direito recebe 50px, o inferior recebe 80px e o direito recebe 20px*/
+}

@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Grid: Explicação e Propriedades</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 20px;
+      }
+      h1 {
+        color: #2c3e50;
+      }
+      section {
+        margin-top: 30px;
+      }
+      .exemplo {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 20px;
+        background-color: #f2f2f2;
+        padding: 20px;
+      }
+      .item {
+        background-color: #3498db;
+        color: white;
+        padding: 20px;
+        text-align: center;
+        border-radius: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>O que é o CSS Grid?</h1>
+    <p>
+      O <code>display: grid;</code> é uma propriedade do CSS usada para criar
+      layouts em duas dimensões, ou seja, para distribuir e organizar os itens
+      tanto nas colunas quanto nas linhas de um contêiner. Ele permite criar
+      designs complexos de forma simples e eficaz.
+    </p>
+
+    <section>
+      <h2>Propriedades do Contêiner Grid</h2>
+      <p>
+        O contêiner Grid é o elemento que utiliza a propriedade
+        <code>display: grid;</code>. Aqui estão as principais propriedades que
+        podem ser aplicadas ao contêiner:
+      </p>
+      <ul>
+        <li>
+          <strong>grid-template-columns</strong>: Define o número e o tamanho
+          das colunas do grid.
+          <ul>
+            <li><code>auto</code>: Tamanho automático com base no conteúdo.</li>
+            <li>
+              <code>fr</code>: Unidade flexível, onde 1fr é uma fração do espaço
+              disponível.
+            </li>
+            <li>
+              <code>repeat()</code>: Função para repetir o padrão de colunas
+              (ex: <code>repeat(3, 1fr)</code> cria 3 colunas de tamanho igual).
+            </li>
+          </ul>
+        </li>
+        <li>
+          <strong>grid-template-rows</strong>: Define o número e o tamanho das
+          linhas do grid.
+          <ul>
+            <li><code>auto</code>: Tamanho automático com base no conteúdo.</li>
+            <li>
+              <code>fr</code>: Unidade flexível, similar ao
+              <code>grid-template-columns</code>.
+            </li>
+          </ul>
+        </li>
+        <li>
+          <strong>grid-template-areas</strong>: Permite nomear áreas do grid,
+          facilitando o posicionamento de itens.
+          <ul>
+            <li>
+              <code>"header header header"</code>: Definindo uma área chamada
+              "header".
+            </li>
+            <li>
+              <code>"content content sidebar"</code>: Uma área de conteúdo e uma
+              barra lateral.
+            </li>
+          </ul>
+        </li>
+        <li>
+          <strong>grid-gap</strong> (ou <strong>gap</strong>): Define o espaço
+          entre as linhas e colunas do grid.
+          <ul>
+            <li>
+              <code>gap: 10px;</code>: Cria um espaço de 10px entre as células
+              do grid.
+            </li>
+          </ul>
+        </li>
+        <li>
+          <strong>justify-items</strong>: Alinha os itens ao longo do eixo
+          horizontal.
+          <ul>
+            <li><code>start</code>: Alinha os itens ao início do contêiner.</li>
+            <li><code>end</code>: Alinha os itens ao final do contêiner.</li>
+            <li>
+              <code>center</code>: Centraliza os itens no eixo horizontal.
+            </li>
+            <li>
+              <code>stretch</code>: Estica os itens para preencher o espaço
+              disponível (padrão).
+            </li>
+          </ul>
+        </li>
+        <li>
+          <strong>align-items</strong>: Alinha os itens ao longo do eixo
+          vertical.
+          <ul>
+            <li>
+              <code>start</code>: Alinha os itens ao início do contêiner (no
+              topo).
+            </li>
+            <li>
+              <code>end</code>: Alinha os itens ao final do contêiner (na parte
+              inferior).
+            </li>
+            <li><code>center</code>: Centraliza os itens no eixo vertical.</li>
+            <li>
+              <code>stretch</code>: Estica os itens para preencher o espaço
+              disponível (padrão).
+            </li>
+          </ul>
+        </li>
+        <li>
+          <strong>justify-content</strong>: Alinha o conteúdo do grid ao longo
+          do eixo horizontal.
+          <ul>
+            <li>
+              <code>start</code>: Alinha o conteúdo ao início do contêiner.
+            </li>
+            <li><code>end</code>: Alinha o conteúdo ao final do contêiner.</li>
+            <li>
+              <code>center</code>: Centraliza o conteúdo no eixo horizontal.
+            </li>
+            <li>
+              <code>space-between</code>: Distribui o conteúdo com espaço igual
+              entre os itens.
+            </li>
+            <li>
+              <code>space-around</code>: Distribui o conteúdo com espaço igual
+              ao redor dos itens.
+            </li>
+            <li>
+              <code>space-evenly</code>: Distribui o conteúdo com espaço igual
+              entre os itens e nas extremidades.
+            </li>
+          </ul>
+        </li>
+        <li>
+          <strong>align-content</strong>: Alinha o conteúdo do grid ao longo do
+          eixo vertical.
+          <ul>
+            <li><code>start</code>: Alinha o conteúdo ao topo do contêiner.</li>
+            <li><code>end</code>: Alinha o conteúdo ao fundo do contêiner.</li>
+            <li>
+              <code>center</code>: Centraliza o conteúdo no eixo vertical.
+            </li>
+            <li>
+              <code>stretch</code>: Estica o conteúdo para preencher o espaço
+              disponível (padrão).
+            </li>
+            <li>
+              <code>space-between</code>: Distribui o conteúdo com espaço igual
+              entre as linhas.
+            </li>
+            <li>
+              <code>space-around</code>: Distribui o conteúdo com espaço igual
+              ao redor das linhas.
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Propriedades dos Itens Grid</h2>
+      <p>
+        Os itens dentro de um contêiner grid podem ser ajustados usando as
+        seguintes propriedades:
+      </p>
+      <ul>
+        <li>
+          <strong>grid-column-start</strong>: Define a linha inicial onde o item
+          começará.
+        </li>
+        <li>
+          <strong>grid-column-end</strong>: Define a linha final onde o item
+          terminará.
+        </li>
+        <li>
+          <strong>grid-row-start</strong>: Define a coluna inicial onde o item
+          começará.
+        </li>
+        <li>
+          <strong>grid-row-end</strong>: Define a coluna final onde o item
+          terminará.
+        </li>
+        <li>
+          <strong>grid-column</strong>: Atalho para
+          <code>grid-column-start</code> e <code>grid-column-end</code>.
+        </li>
+        <li>
+          <strong>grid-row</strong>: Atalho para <code>grid-row-start</code> e
+          <code>grid-row-end</code>.
+        </li>
+        <li>
+          <strong>grid-area</strong>: Permite que um item seja posicionado
+          usando o nome da área definida em <code>grid-template-areas</code>.
+        </li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Exemplo Prático</h2>
+      <p>Veja abaixo um exemplo de um contêiner grid com três itens:</p>
+      <div class="exemplo">
+        <div class="item">Item 1</div>
+        <div class="item">Item 2</div>
+        <div class="item">Item 3</div>
+      </div>
+    </section>
+  </body>
+</html>

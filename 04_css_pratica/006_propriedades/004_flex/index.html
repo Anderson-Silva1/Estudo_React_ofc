@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flexbox: Explicação e Propriedades</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 20px;
+      }
+      h1 {
+        color: #2c3e50;
+      }
+      section {
+        margin-top: 30px;
+      }
+      .exemplo {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #f2f2f2;
+        padding: 20px;
+      }
+      .item {
+        background-color: #3498db;
+        color: white;
+        padding: 20px;
+        border-radius: 5px;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>O que é o Flexbox?</h1>
+    <p>
+      O <code>display: flex;</code> é uma propriedade do CSS usada para criar
+      layouts flexíveis e dinâmicos. Ele facilita o posicionamento e a
+      organização de elementos dentro de um contêiner, permitindo que os itens
+      sejam distribuídos ao longo de uma linha ou coluna, com flexibilidade de
+      acordo com o tamanho da tela.
+    </p>
+
+    <section>
+      <h2>Propriedades do Contêiner Flex</h2>
+      <p>
+        Para tornar um contêiner flexível, usamos o
+        <code>display: flex;</code> no elemento pai (o contêiner). Aqui estão
+        algumas das principais propriedades do contêiner:
+      </p>
+      <ul>
+        <li>
+          <strong>flex-direction</strong>: Define a direção dos itens dentro do
+          contêiner.
+          <ul>
+            <li><code>row</code>: Alinha os itens na horizontal (padrão).</li>
+            <li><code>column</code>: Alinha os itens na vertical.</li>
+            <li>
+              <code>row-reverse</code>: Alinha os itens na horizontal, mas na
+              ordem inversa.
+            </li>
+            <li>
+              <code>column-reverse</code>: Alinha os itens na vertical, mas na
+              ordem inversa.
+            </li>
+          </ul>
+        </li>
+        <li>
+          <strong>flex-wrap</strong>: Controla a quebra de linha dos itens.
+          <ul>
+            <li><code>nowrap</code>: Impede a quebra de linha (padrão).</li>
+            <li>
+              <code>wrap</code>: Permite que os itens quebrem para a próxima
+              linha quando necessário.
+            </li>
+            <li>
+              <code>wrap-reverse</code>: Permite a quebra, mas inverte a direção
+              das linhas.
+            </li>
+          </ul>
+        </li>
+        <li>
+          <strong>justify-content</strong>: Alinha os itens ao longo do eixo
+          principal (horizontal ou vertical, dependendo do
+          <code>flex-direction</code>).
+          <ul>
+            <li>
+              <code>flex-start</code>: Alinha os itens ao início do contêiner.
+            </li>
+            <li>
+              <code>flex-end</code>: Alinha os itens ao final do contêiner.
+            </li>
+            <li>
+              <code>center</code>: Centraliza os itens dentro do contêiner.
+            </li>
+            <li>
+              <code>space-between</code>: Distribui os itens com espaço igual
+              entre eles.
+            </li>
+            <li>
+              <code>space-around</code>: Distribui os itens com espaço igual ao
+              redor deles.
+            </li>
+            <li>
+              <code>space-evenly</code>: Distribui os itens com espaço igual
+              entre eles e nas extremidades.
+            </li>
+          </ul>
+        </li>
+        <li>
+          <strong>align-items</strong>: Alinha os itens ao longo do eixo
+          transversal (perpendicular ao eixo principal).
+          <ul>
+            <li>
+              <code>flex-start</code>: Alinha os itens ao início do eixo
+              transversal.
+            </li>
+            <li>
+              <code>flex-end</code>: Alinha os itens ao final do eixo
+              transversal.
+            </li>
+            <li>
+              <code>center</code>: Centraliza os itens no eixo transversal.
+            </li>
+            <li>
+              <code>baseline</code>: Alinha os itens pela linha de base do
+              texto.
+            </li>
+            <li>
+              <code>stretch</code>: Estica os itens para preencher o contêiner
+              (padrão).
+            </li>
+          </ul>
+        </li>
+        <li>
+          <strong>align-content</strong>: Alinha as linhas do contêiner flex
+          quando há múltiplas linhas.
+          <ul>
+            <li>
+              <code>flex-start</code>: Alinha as linhas ao início do eixo
+              transversal.
+            </li>
+            <li>
+              <code>flex-end</code>: Alinha as linhas ao final do eixo
+              transversal.
+            </li>
+            <li>
+              <code>center</code>: Centraliza as linhas no eixo transversal.
+            </li>
+            <li>
+              <code>space-between</code>: Distribui as linhas com espaço igual
+              entre elas.
+            </li>
+            <li>
+              <code>space-around</code>: Distribui as linhas com espaço igual ao
+              redor delas.
+            </li>
+            <li>
+              <code>stretch</code>: Estica as linhas para preencher o contêiner
+              (padrão).
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Propriedades dos Itens Flex</h2>
+      <p>
+        Dentro de um contêiner flexível, os itens também podem ter propriedades
+        para ajustar o seu comportamento e tamanho.
+      </p>
+      <ul>
+        <li>
+          <strong>flex-grow</strong>: Controla o quanto o item pode crescer para
+          preencher o espaço disponível. O valor padrão é <code>0</code>.
+        </li>
+        <li>
+          <strong>flex-shrink</strong>: Controla o quanto o item pode encolher
+          se houver pouco espaço. O valor padrão é <code>1</code>.
+        </li>
+        <li>
+          <strong>flex-basis</strong>: Define o tamanho inicial do item antes de
+          aplicar o crescimento ou encolhimento. O valor pode ser em pixels,
+          porcentagem, ou <code>auto</code>.
+        </li>
+        <li>
+          <strong>flex</strong>: Atalho para as três propriedades anteriores,
+          <code>flex-grow</code>, <code>flex-shrink</code>, e
+          <code>flex-basis</code>.
+        </li>
+        <li>
+          <strong>align-self</strong>: Permite que um item sobreponha a
+          propriedade <code>align-items</code> do contêiner. Os valores são os
+          mesmos de <code>align-items</code>.
+        </li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Exemplo Prático</h2>
+      <p>
+        Veja abaixo um exemplo de um contêiner com três itens utilizando o
+        Flexbox:
+      </p>
+      <div class="exemplo">
+        <div class="item">Item 1</div>
+        <div class="item">Item 2</div>
+        <div class="item">Item 3</div>
+      </div>
+    </section>
+  </body>
+</html>

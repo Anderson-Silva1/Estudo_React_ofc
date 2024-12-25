@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Posicionamento no CSS</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 20px;
+      }
+      h1 {
+        color: #2c3e50;
+      }
+      section {
+        margin-top: 30px;
+      }
+      .exemplo {
+        position: relative;
+        width: 100%;
+        height: 200px;
+        background-color: #f2f2f2;
+        border: 1px solid #ccc;
+      }
+      .item {
+        width: 100px;
+        height: 100px;
+        background-color: #3498db;
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        border-radius: 5px;
+      }
+      .static {
+        position: static;
+      }
+      .relative {
+        position: relative;
+        top: 30px;
+        left: 30px;
+      }
+      .absolute {
+        position: absolute;
+        top: 50px;
+        left: 50px;
+      }
+      .fixed {
+        position: fixed;
+        top: 10px;
+        right: 10px;
+      }
+      .sticky {
+        position: sticky;
+        top: 0;
+        background-color: #2ecc71;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Posicionamento no CSS</h1>
+    <p>
+      O CSS oferece várias maneiras de posicionar elementos em uma página. A
+      posição dos elementos pode ser controlada usando a propriedade
+      <code>position</code>, que determina como o elemento é posicionado na
+      página.
+    </p>
+
+    <section>
+      <h2>Posições no CSS</h2>
+      <p>
+        Existem 5 valores principais para a propriedade <code>position</code>:
+      </p>
+      <ul>
+        <li>
+          <strong>static</strong>: O valor padrão. O elemento é posicionado no
+          fluxo normal do documento, ou seja, ele ocupa o espaço de acordo com a
+          sua posição no HTML, e não é afetado pelas propriedades
+          <code>top</code>, <code>right</code>, <code>bottom</code>, ou
+          <code>left</code>.
+        </li>
+        <li>
+          <strong>relative</strong>: O elemento é posicionado em relação à sua
+          posição original no fluxo do documento. Ou seja, ele pode ser movido
+          em relação à sua posição normal com as propriedades <code>top</code>,
+          <code>right</code>, <code>bottom</code>, ou <code>left</code>.
+        </li>
+        <li>
+          <strong>absolute</strong>: O elemento é posicionado em relação ao
+          contêiner mais próximo com <code>position: relative</code>,
+          <code>absolute</code>, ou <code>fixed</code>. Se não houver um
+          contêiner posicionado, ele será posicionado em relação ao
+          <code>body</code> (a janela do navegador).
+        </li>
+        <li>
+          <strong>fixed</strong>: O elemento é posicionado em relação à janela
+          de visualização (viewport). Ele permanece fixo no lugar, mesmo quando
+          o usuário rola a página para cima ou para baixo.
+        </li>
+        <li>
+          <strong>sticky</strong>: O elemento é posicionado com base no rolar da
+          página. Ele se comporta como um elemento <code>relative</code> até que
+          ele atinja um determinado ponto na tela, onde ele se torna fixo.
+        </li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Exemplos Práticos</h2>
+      <div class="exemplo">
+        <div class="item static">Static</div>
+      </div>
+      <div class="exemplo">
+        <div class="item relative">Relative</div>
+      </div>
+      <div class="exemplo">
+        <div class="item absolute">Absolute</div>
+      </div>
+      <div class="exemplo">
+        <div class="item fixed">Fixed</div>
+      </div>
+      <div class="exemplo">
+        <div class="item sticky">Sticky</div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Propriedade <code>z-index</code></h2>
+      <p>
+        O <code>z-index</code> controla a ordem de empilhamento dos elementos.
+        Um elemento com um valor de <code>z-index</code> maior será exibido
+        acima de um elemento com um valor de <code>z-index</code> menor.
+      </p>
+      <p>Exemplo:</p>
+      <div style="position: relative; height: 200px">
+        <div
+          style="
+            position: absolute;
+            top: 50px;
+            left: 50px;
+            background-color: rgba(52, 152, 219, 0.7);
+            width: 100px;
+            height: 100px;
+            z-index: 1;
+          "
+        >
+          Elemento 1
+        </div>
+        <div
+          style="
+            position: absolute;
+            top: 70px;
+            left: 70px;
+            background-color: rgba(39, 174, 96, 0.7);
+            width: 100px;
+            height: 100px;
+            z-index: 2;
+          "
+        >
+          Elemento 2
+        </div>
+      </div>
+      <p>
+        O <code>Elemento 2</code> ficará acima do <code>Elemento 1</code> devido
+        ao <code>z-index</code> maior.
+      </p>
+    </section>
+  </body>
+</html>

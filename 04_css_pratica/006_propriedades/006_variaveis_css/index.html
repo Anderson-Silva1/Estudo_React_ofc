@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Variáveis CSS</title>
+    <style>
+      /* Definindo variáveis CSS */
+      :root {
+        --cor-principal: #3498db;
+        --cor-secundaria: #2ecc71;
+        --cor-fundo: #f2f2f2;
+        --fonte-principal: "Arial", sans-serif;
+        --largura-maxima: 1200px;
+        --margem: 20px;
+      }
+
+      body {
+        font-family: var(--fonte-principal);
+        background-color: var(--cor-fundo);
+        margin: 0;
+        padding: var(--margem);
+      }
+
+      h1 {
+        text-align: center;
+        color: var(--cor-principal);
+        padding: var(--margem);
+      }
+
+      .container {
+        width: 100%;
+        max-width: var(--largura-maxima);
+        margin: 0 auto;
+        padding: var(--margem);
+        box-sizing: border-box;
+      }
+
+      .botao {
+        background-color: var(--cor-principal);
+        color: white;
+        border: none;
+        padding: 15px 25px;
+        cursor: pointer;
+        border-radius: 5px;
+        font-size: 16px;
+        transition: background-color 0.3s;
+      }
+
+      .botao:hover {
+        background-color: var(--cor-secundaria);
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Exemplo de Uso de Variáveis CSS</h1>
+    <div class="container">
+      <p>
+        As variáveis CSS permitem armazenar valores reutilizáveis, facilitando a
+        manutenção e personalização do estilo de uma página.
+      </p>
+      <button class="botao">Clique aqui</button>
+    </div>
+
+    <section>
+      <h2>O que são Variáveis CSS?</h2>
+      <p>
+        As variáveis CSS, também chamadas de "custom properties", são valores
+        que podem ser definidos uma vez e reutilizados em diferentes partes do
+        código CSS. Elas são muito úteis para manter a consistência e facilitar
+        a manutenção do código, especialmente em projetos grandes.
+      </p>
+
+      <h3>Como Definir Variáveis CSS?</h3>
+      <p>
+        As variáveis são definidas utilizando o prefixo <code>--</code> e podem
+        ser colocadas dentro de um seletor, como <code>:root</code>, que é o
+        seletor global para o documento. O valor das variáveis pode ser de
+        qualquer tipo de dado, como cores, tamanhos, fontes, entre outros.
+      </p>
+
+      <pre>
+            <code>
+:root {
+    --cor-principal: #3498db;
+    --cor-secundaria: #2ecc71;
+}
+            </code>
+        </pre>
+
+      <h3>Como Usar Variáveis CSS?</h3>
+      <p>
+        Para utilizar uma variável, basta referenciá-la com a função
+        <code>var()</code> no lugar do valor que você deseja substituir. Isso
+        pode ser feito em qualquer parte do CSS onde um valor é esperado.
+      </p>
+
+      <pre>
+            <code>
+h1 {
+    color: var(--cor-principal);
+}
+            </code>
+        </pre>
+
+      <p>
+        No exemplo acima, o título <code>h1</code> recebe a cor definida na
+        variável <code>--cor-principal</code>.
+      </p>
+
+      <h3>Vantagens do Uso de Variáveis CSS</h3>
+      <ul>
+        <li>
+          <strong>Reusabilidade:</strong> Uma vez definida, a variável pode ser
+          reutilizada em diferentes partes do código, economizando tempo e
+          evitando a repetição de valores.
+        </li>
+        <li>
+          <strong>Facilidade de manutenção:</strong> Alterar o valor de uma
+          variável em um único lugar modifica todos os lugares onde ela foi
+          utilizada, tornando a manutenção do código mais eficiente.
+        </li>
+        <li>
+          <strong>Maior consistência:</strong> Ao usar variáveis para definir
+          cores, tamanhos e outros valores, é fácil manter uma paleta de cores e
+          tamanhos consistente ao longo de todo o projeto.
+        </li>
+      </ul>
+
+      <h3>Exemplo de Mudança de Variável CSS com Media Queries</h3>
+      <p>
+        Você também pode usar media queries para modificar o valor de variáveis
+        CSS dependendo do tamanho da tela do dispositivo. Isso permite criar
+        designs responsivos facilmente.
+      </p>
+
+      <pre>
+            <code>
+@media (max-width: 768px) {
+    :root {
+        --cor-principal: #e74c3c;
+    }
+}
+            </code>
+        </pre>
+      <p>
+        Com o código acima, a cor da variável <code>--cor-principal</code> será
+        alterada para <code>#e74c3c</code> (vermelho) quando a tela tiver menos
+        de 768px de largura, o que pode ser útil para criar diferentes estilos
+        em dispositivos móveis.
+      </p>
+    </section>
+  </body>
+</html>

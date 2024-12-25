@@ -6,5 +6,127 @@
     <title>Document</title>
     <link rel="stylesheet" href="./style.css" />
   </head>
-  <body></body>
+  <body style="font-family: Arial, Helvetica, sans-serif">
+    <div>
+      <h1>Seletor por TAG</h1>
+      <p>Paragrafo 1</p>
+      <p>Paragrafo 2</p>
+      <p>Paragrafo 3</p>
+      <span
+        >Dessa forma todas as Tags
+        <code>&lt; p &gt; &lt;/ p &gt;</code> assumirão as propriedades
+        descritas no arquivo
+        <code
+          style="
+            background-color: blue;
+            color: white;
+            padding: 5px;
+            font-weight: 700;
+          "
+          >style.css</code
+        ></span
+      >
+    </div>
+
+    <hr />
+
+    <div>
+      <h1>Seletor Classe e ID</h1>
+      <p class="paragrafo_class">Paragrafo Classe 1</p>
+      <p class="paragrafo_class">Paragrafo Classe 2</p>
+      <p class="paragrafo_class">Paragrafo Classe 3</p>
+      <p class="paragrafo_class">Paragrafo Classe 4</p>
+      <p id="paragrafo_id">Paragrafo ID</p>
+      <span
+        >Aqui na realidade, nossos parágrafor estão recebendo a estilização
+        geral por TAG, e recebem também as suas estilizações, sejam por
+        <code
+          style="
+            background-color: blue;
+            color: white;
+            padding: 5px;
+            font-weight: 700;
+          "
+          >Classe</code
+        >
+        ou
+        <code
+          style="
+            background-color: blue;
+            color: white;
+            padding: 5px;
+            font-weight: 700;
+          "
+          >ID</code
+        >
+      </span>
+    </div>
+
+    <hr />
+
+    <div>
+      <h1>Estilização específica, com tag e classe ou ID</h1>
+      <p class="paragrafo-especifico-classe">Paragrafo específico classe 1</p>
+      <p class="paragrafo-especifico-classe">Paragrafo específico classe 2</p>
+      <p class="paragrafo-especifico-classe">Paragrafo específico classe 3</p>
+      <p class="paragrafo-especifico-classe">Paragrafo específico classe 4</p>
+      <p class="paragrafo-especifico-classe">Paragrafo específico classe 5</p>
+      <p id="paragrafo-especifico-id-1">Paragrafo específico ID 1</p>
+      <p id="paragrafo-especifico-id-2">Paragrafo específico ID 2</p>
+      <span
+        >Aqui estamos selecionando a tag <code>&lt; p &gt; &lt;/ p &gt;</code> e
+        selecionando-a junto com a sua
+        <code
+          style="
+            background-color: blue;
+            color: white;
+            padding: 5px;
+            font-weight: 700;
+          "
+          >Classe</code
+        >
+        ou
+        <code
+          style="
+            background-color: blue;
+            color: white;
+            padding: 5px;
+            font-weight: 700;
+          "
+          >ID</code
+        >
+        para ter um grau de
+        <code
+          style="
+            background-color: red;
+            color: white;
+            padding: 5px;
+            font-weight: 700;
+          "
+          >Especificidade Maior</code
+        >
+      </span>
+
+      <br />
+      <br />
+
+      <span
+        >Ou seja, ele só vai selecionar a TAG que tiver o mesmo classe ou ID
+        correspondente, caso não tenha, essa estilização não fará efeito</span
+      >
+    </div>
+
+    <hr />
+
+    <div>
+      <h1>Estilização específica, com as tags filhas</h1>
+      <main>
+        <section>
+          <p>Paragrafo específico filho 1</p>
+          <p>Paragrafo específico filho 2</p>
+          <p>Paragrafo específico filho 3</p>
+        </section>
+      </main>
+    </div>
+  </body>
 </html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>box-sizing</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <h1>Aprendendo sobre o box-sizing</h1>
+    <p>
+      O box-sizing é uma propriedade CSS usada para determinar como o tamanho
+      total de um elemento é calculado. Ele define se o padding e a borda de um
+      elemento devem ser incluídos no cálculo de suas dimensões (width e
+      height).
+    </p>
+    <p>
+      Usamos ele no seletor geral "<code>*</code>", juntamente com o after e com
+      o before
+      <span
+        style="
+          background-color: black;
+          border-radius: 10px;
+          color: #fff;
+          font-weight: 600;
+          padding: 10px;
+        "
+        >(vamos aprender sobre eles mais pra frente)</span
+      >
+    </p>
+
+    <hr />
+    <br /><br />
+
+    <div class="container">
+      <div class="box content-box">
+        <strong>Content-Box</strong>
+        <p>
+          (A largura e altura <br />
+          excluem padding e bordas)
+        </p>
+      </div>
+      <div class="box border-box">
+        <strong>Border-Box</strong>
+        <p>
+          (A largura e altura <br />
+          incluem padding e bordas)
+        </p>
+      </div>
+    </div>
+  </body>
+</html>

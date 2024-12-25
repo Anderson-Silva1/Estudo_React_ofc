@@ -1,0 +1,23 @@
+.teste {
+  width: 400px;
+  height: 400px;
+  background-color: red;
+}
+
+.teste :nth-child(1) {
+  width: 50%;
+  height: 50%;
+  background-color: green;
+}
+
+.teste :nth-child(2) {
+  width: 50%;
+  height: 50%;
+  background-color: yellow;
+}
+
+.teste2 {
+  width: 50%;
+  height: 50vh;
+  background-color: blue;
+}

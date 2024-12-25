@@ -1,0 +1,34 @@
+p.gradiente1 {
+  background: linear-gradient(red, blue);
+}
+
+p.gradiente2 {
+  background: linear-gradient(to top, red, blue);
+}
+p.gradiente3 {
+  background: linear-gradient(to right, red, blue);
+}
+p.gradiente4 {
+  background: linear-gradient(to bottom, red, blue);
+}
+p.gradiente5 {
+  background: linear-gradient(to left, red, blue);
+}
+
+ul :nth-child(1) {
+  background-color: yellow;
+}
+
+ul :nth-child(2) {
+  background-color: green;
+}
+
+ul :nth-child(3) {
+  background-color: cadetblue;
+}
+
+div#div {
+  width: 100px;
+  height: 100px;
+  background-color: blue;
+}

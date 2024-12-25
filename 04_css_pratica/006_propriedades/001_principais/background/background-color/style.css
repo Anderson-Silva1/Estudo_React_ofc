@@ -1,0 +1,21 @@
+p.teste {
+  background-color: red;
+}
+
+ul :nth-child(1) {
+  background-color: yellow;
+}
+
+ul :nth-child(2) {
+  background-color: green;
+}
+
+ul :nth-child(3) {
+  background-color: cadetblue;
+}
+
+div#div {
+  width: 100px;
+  height: 100px;
+  background-color: blue;
+}

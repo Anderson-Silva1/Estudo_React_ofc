@@ -1,0 +1,29 @@
+html {
+  font-size: 16px; /* ? Esse é o valor em PX para o tamanho dos elementos da nossa página */
+}
+
+.teste1 {
+  background-color: #f1f1f1;
+  width: 800px;
+  font-size: 10px; /* ! Não adiantará de nada*/
+}
+
+.teste1 :nth-child(1) {
+  font-size: 1rem;
+}
+
+.teste1 :nth-child(2) {
+  font-size: 0.5rem;
+}
+
+.teste1 :nth-child(3) {
+  font-size: 2rem;
+}
+
+.teste1 :nth-child(4) {
+  font-size: 0.3rem;
+}
+
+.teste1 :nth-child(5) {
+  font-size: 5rem;
+}
