@@ -1,0 +1,4 @@
+VAMOS APRENDER SOBRE EVENTOS AGORA
+
+O QUE SÃO EVENTOS?
+    - São interações especiais que temos a nosso dispor que será execultado caso o usuário faça uma ação específica, seja um click do mouse ou qualquer outra coisa

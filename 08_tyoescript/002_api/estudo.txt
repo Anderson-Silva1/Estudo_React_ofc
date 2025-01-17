@@ -1,0 +1,77 @@
+O QUE É API?
+    - Em português significa "Interface de programação de aplicações"
+    - Hoje em dia é muito comun que diferentes aplicações consumam dados pela internet, muitas vezes dados providenciados por terceiros.
+    - Por exemplo: Um aplicativo de entregade alimentos pode usar dados da geolocalização do Google para localizar restaurantes próximos ao usuário e exibir a rota percorrida pelo entregador
+
+    - Como esas aplicações podem estar rodando em diferentes plataformas e linguagens de programação, é importante estabelecer uma "linguagem comum" para que todos consigam consumir esses dados.
+    - A API é uma interface que nos permitem ultilizar funcionalidades/recursos de terceiros, seguindo um conjunto de definições/contratos estabelecidos pelo mesmo
+
+EXEMPLOS DE API
+    - Login social (google, linkedin, github...)
+    - Pagamento online
+
+    - A API acaba facilitando a vida dos programadores, pois reduz o tempo de desenvolvimento de novas aplicações
+
+
+TIPOS DE API's
+    - Públicas e Abertas
+        * São as API's Gratuitas
+    - Privadas ou Internas
+    - Apis de Parceiros
+
+
+PROTOCOLOS DE API's
+    - Os protocolos servem para padronizar a troca de dados da aplicações e a API
+    - Existem diferentes protocolos de API's
+        * RPC
+        * SOAP
+        * GraphQL
+        * REST
+    - REST é o padrão mais comum
+    - REST significa "Representation State Trasfer", que em português ficaria "Transferência de Estado de Representação", ele se baseia em 6(seis) restrições. Caso uma API tenha essas 6(seis) restrições ela é considerada uma API RESTFull
+
+
+RESTRIÇÕES API REST
+    1. Ter uma arquitetura formada por clientes, servidores e recursos, com solicitações gerenciadas pelo HTTP
+    2. estabelecer uma comunicação Stateless entre cliente e servidor. Isso significa que nenhuma informação do cliente deve ser armazenada entre solicitações GET e todas as solicitações são separadas e desconectadas.
+    3. Armazenar dados em cache para otimizar as interações entre cliente e servidor 
+    4. Ter um ainterface unifirme entre os componente para que as informação sejam transferidas em formato padronizado.
+    5. Ter um sistema em camadas que organiza os tipos de servidores (responsáveis pela segurânça, pelo carregamento de carga e assim por diante) envolvidos na recuperação das informações solicitadas em hierarquias que o cliente não pode ver
+    6. Possibilitar código sob demanda (OPCIONAL): A capacidade de enviar um código execultável do servidor para o cliente quando solicitado para ampliar a funcionalidade disponível ao cliente
+
+CARACTERÍSTICAS API REST
+    - Os recursos são enviados e recebidos via protocolo HTTP
+    - URI/URL BASE => Várias API's fornecem o "endereço base". Todas as suas requisições incluirão esse endereço, e ao final dele nós colocamos detalhes específicos para cada recurso disponível.
+    - FORMATO DO DADO/RECURSO => Algumas API's possuem formatos fixos de dados. Outras permitem que você escolha. É comun, por exemplo, que uma API permita que você escolha entre JSON, XML, CSV e/ou OUTROS FORMATOS
+    - SCHEMAS => É bastante comun que as API's disponibilizem um "modelo" de como será formatado o seu JSON para que os desenvolvedoressaibam quais campos esperare quais tipos de dados serão possível para cada campo. EXEMPLOS:
+        * {
+            "name": string,
+            "pontuacao": integer
+        }
+    - AUTENTICAÇÃO => Outro aspecto também importante é a autenticação. Enquanto algumas API's são gratis/abertas outras são pagas. Ainda temos algumas híbridas (é possível acessar gratuitamente certos recurços, ou consumir um certo volume de dado, e acima disse você deverá pagar)
+        * Modelos de AUTENTICAÇÃO:
+            1. CHAVE => Ao fazer seu registro, você recebeu uma chave que será passadana requisição
+            2. OAuth => Um esquema um pouco mais compleco onde são combinados códigos de altorização, identificação do cliente e segredo do cliente em um POST, e o servidor cria uma sessão por tempo limitadoe fornece o ID da mesma. API's de gigantes da internet (como Google e Facebook) costumam usar esse modelo
+    - ENDPOINT => É a URL por completa que deve ser acessada a fim de encontrar um recurso disponível 
+        a. DICIONARY API:
+            * https://api.dictionaryapi.dev/api/v2/entries/en/hello
+
+        b. Open Weather API:
+            * https://api.openweathermap.org/data/2.5/weather?lat={lat}&lon={lon}&appid={API key}
+
+    - Link para API's públicas: https://github.com/public-apis/public-apis
+
+
+COMO TESTAR AS API'S??
+    - Precisamos primeiramente saber como ela (API) funciona
+    - Podemos ultilizar o próprio Browser (navegador) ou software's específicos para esse fim
+    - Podemos fazer requisições HTTP de uma API pelo navegador quando eu vou usar o método GET, caso eu use outro método, não consigo usar o navegador, para isso existem os softwares
+
+QUAIS SOFTWARES EU USO?
+    - Podemos usar o INSOMNIA e o POSTMAN 
+        * INSOMNIA => https://insomnia.rest/download
+        * POSTMAN => https://www.postman.com/downloads/
+
+    
+EXISTEM OUTROS TIPOS DE API'S??
+    - Sim, podemos ter API's que ajudam um software a funcionar bem, como o Navegador, ele possui API's próprias

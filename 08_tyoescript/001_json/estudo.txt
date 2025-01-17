@@ -1,0 +1,28 @@
+O QUE É JSON?
+    - É o padrão de comunicação da web
+    - Significa JavaScript Object Notation (Notação de objetos JavaScript)
+    - É uma formatação leve de troca de dados da web
+    - Para humanos: Facil de ler e escrever
+    - Para máquinas: Fácil de interpretar e gerar
+    - Embora ele seja inspirados nos objetos JavaScript, ele é um formato que independe da linguagem
+    - Ultiliza convenções familiáres a diferentes linguagens de programação
+        * Coleção de pares nome/valor (objetos, dicionários, record, struct)
+        * Lista ordenada de valores (Array, Lista, Vetor, Tupla, Sequência)
+    
+    - Não podemos usar comentários dentro do arquivo .JSON
+    - Devemos por padrão usar áspas duplas em cada chave, e em cada valor queseja string
+
+VANTAGENS DO JSON
+    - Fácil interpretação e escrita
+    - Maior velocidade no transporte de dado pela web
+    - Arquivo com tamanho reduzido
+    - Fácil de realizar parsing
+        * Tornar o JSON em um objeto manipulável para a linguagem em questão
+
+
+APLICAÇÃO DO JSON, ONDE ELE APARECE?
+    - Arquivos de configurações do VS Code
+    - package.json
+    - .prettierrc.json
+    - .eslint.json
+    - Transferência de dados entre aplicações: API

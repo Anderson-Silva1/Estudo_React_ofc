@@ -1,0 +1,33 @@
+O QUE É TYPESCRIPT?
+    - É um "super JavaScript"... Na realidade ele é um JavaScript com tipagem estática
+    - TypeScript é JavaScript, mas JavaScript não é TypeScript
+    - O navegador não entende TypeScript ainda, o que significa que devemos tansformá-lo em JavaScript... Esse processo se chama Compilação ou Transpilação
+    - Com o TypeScript podemos usar a versão mais nova do JavaScript... Porém na hora de transpilar ou compilar o código, devemos fazer isso para uma versão mais antiga do JavaScript (que os navegadores entendam)
+
+
+COMO USAR O TYPESCRIPT?
+    - Precisamos primeiro ter o NODE instalado
+
+    1. Inicializar um projeto NODE (npm init)
+    2. Instalar o TypeScript
+        2.1 Instalação Global (toda a máquina) (npm install -g typescript)
+        2.2 Instalação Local (dentro do projeto) (npm install typescript)
+            2.2.1 O typescript não  servirá para mim em produção, então instalaremos ele como dependência de desenvolvimento (npm install typescript -D)
+    3. Rodar o TypeScript (npx tsc index.ts)
+    4. Agora não queremos ter que ficar usando o comando do ponto 3 direto, para isso usamos o parâmetro watch, quevai fazer o computador ficar observando um arquivo e sempre que houver uma mudança nele, ele vai execultar determinado comando
+        4.1 npx tsc index.ts --watch
+
+
+CRIANDO NOSSO ARQUIVO DE CONFIGURAÇÃO TYPESCRIPT
+    1. Usamos o comando "npx tsc --init"
+        1.1 Irá criar um arquivo chamado "tsconfig.json"
+        1.2 Agora não precisamos informar qual será o arquivo a ser compilado, com esse arquivo criado ele vai compilar todos os arquivos .ts do nosso projeto
+        1.3 Agora o padrão da versão do ES será o ES6
+
+
+ENTENDENDO CONFIGURAÇÃO
+    - target => Versão do ES ao ser compilada para o JavaScript
+    - strict => É o nosso validados de sintaxe para o TypeScript, é ele quem vai dizer que existe um erro ou não no nosso código
+    - noEmitOnError => Por padrão, conseguimos compilar nosso código .ts para .js mesmo com erro... Porém, essa configuração impossibilita isso, basta colocar ela como true... Sempre que houver um erro em nosso arquivo .ts ele nãoserá compilado para .js
+    - outDir => Essa é uma configuração que permite definir onde os arquivos compilados irão ser gerados, exemplo, podemos colocar os nossos arquivos compilados (.js) para pasta "src/js"
+

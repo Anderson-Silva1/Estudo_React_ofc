@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS pelo JavaScript</title>
+    <style>
+      body {
+        width: 100%;
+        height: 100vh;
+      }
+
+      .azul {
+        width: 400px;
+        height: 400px;
+        background-color: blue;
+      }
+
+      .div_vermelho {
+        width: 400px;
+        height: 400px;
+        background-color: red;
+      }
+
+      .centralizar {
+        margin: 0 auto;
+      }
+
+      #theme {
+        width: 200px;
+        height: 50px;
+        position: fixed;
+        top: 0;
+        right: 0;
+        margin: 50px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Css Pelo JavaScript</h1>
+
+    <div id="div_azul"></div>
+    <div id="div_vermelho" class="centalizar"></div>
+
+    <div><button id="theme">Mudar Tema</button></div>
+
+    <script src="./index.js"></script>
+  </body>
+</html>

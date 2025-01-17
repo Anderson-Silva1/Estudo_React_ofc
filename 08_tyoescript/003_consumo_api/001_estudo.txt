@@ -1,0 +1,5 @@
+CONSUMINDO API
+    - Aprenderemos sobre o Fetch API
+    - Ele é uma API do Navegador, o que significa que ela só vai rodar se nosso javaScript estiver rodando no navegador
+    - Ele serve para obter dados de uma API
+    - Vamos aprender como fazer isso na prática, no JavaScript

@@ -1,0 +1,46 @@
+O QUE É POO?
+    - Programação Orientada a Objetos
+
+
+O QUE É Programação Orientada a Objetos?
+    - É um paradigma de programação que foca na modelagem das entidades envolvidas em um problema (Objetos) e na interação entre elas
+
+
+VANTEGENS DA POO:
+    1. Reultilização de código;
+        - Isso respeita oconceito de programação chamado DRY (Don't Reapeat Yourself) que significa "Não se repita"
+    2. Modularização;
+    3. Interação símples entre módulos;
+    4. Reaproveitamento de módulos em outro sistema (se possível).
+
+
+ELEMENTOS DA POO:
+    1. CLASSE
+        * Abstração de algum elemento do mundo real, exemplo: Pessoa, Smartphone, Cachorro...
+    
+    2. OBJETO
+        * Uma representação "concreta" da abstração feita atravéz da classe. Exemplo: Anderson, Samsung A03, Venenosa...
+
+    3. ATRIBUTOS
+        * Características comuns apresentadas pelos objetos de uma determinada classe. Exemplo: Nome, Idade, Endereço (Pessoa); Modelo, Marca, Configuração (Smartphone); Raça (Cachorro)...
+    
+    4. MÉTODOS
+        * Ações comuns relizadas pelos objetos de uma determinada classe. Exemplo: Pensar, Estudar, Caminhar (Pessoa); Ligar, Instalar App, Tirar foto (Smartphone); Latir (Cachorro)
+
+
+PRINCÍPIOS DA POO:  
+    1. Encapsulamento
+        * Cada classe deve conter todas as informações necessárias para o seu funcionamento bem como todos os métodos necessários para alterar essas informações. Idealmente, apenas objetos das próprias classes poderão alterar seus atributos, e objetos de outras classes irãointeragir com eles atravéz de métodos.
+
+    2. Herânça
+        * Se várias classes terão atributos e métodos em comum, nãodevemos ter que redigitá-los várias vezes. Ao invéz disso criamos uma classe com os stributos em comum e as outras classes irão herdá-los
+
+    3. Polimorfísmo
+        * Objetos de diferentes classes herdeiras de uma mesma classe mãe podem ser tratados genericaamente como objetos pertencentes a classe mãe
+
+TRABALHANDO COM CLASSES:
+    1. Temos a palavra reservada "class"
+    2. Temos os atributos dessa classe e os seus tipos
+    3. Temos o método construtor, que será chamado sempre que está classe for instânciada... Esse método receberá como parâmetro as variáveis colocadas pelo desenvolvedor, e em seu escopo, terá a inicialização delas
+    4. Temos os métodos dessa classe (caso tenha)
+    5. Agora fora do ecopo da classe, temos uma variável recebendo a palavra reservada "new" + Nome da Classe... Abrimos parênteses, e esses parênteses irão chamar o método construtor da classe, e colocaremos nos parâmetros, todas as 

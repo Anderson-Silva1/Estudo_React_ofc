@@ -1,0 +1,17 @@
+{
+  "name": "Anderson da Silva Valentim",
+  "age": 20,
+  "sex": "male",
+  "id": 47486437813,
+  "peso": 50,
+  "altura": 1.6,
+  "mvp": true,
+  "profissao": "Desenvolvedor de Software",
+  "parentes": [
+    { "pai": "Jose Francisco" },
+    { "mae": "Dayane Lopes" },
+    { "irmao": "Emanoel" },
+    { "noiva": "Rafaela " }
+  ],
+  "numeros": [13, 42, 24, 24, 2353, 64]
+}
